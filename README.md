@@ -35,7 +35,7 @@ mysqlfiles: 数据库结构定义文件
 * 当用run_ui_tc_db.py执行用例，参数中需要指定测试套件或测试用例数据库id, 测试环境数据库id（支持环境切换，如果执行web用例，环境为hosts列表在数据库中的id，如果执行app用例，环境为设备在数据库中的id）, 是否是批量执行（-m 为 yes，批量执行会生成html报告，否则无）, 和报告收件人邮箱（如果不指定则不发送邮件），run_ui_tc_ab.py一般作为UI自动化系统的后端使用。
 
 ### 用例执行
-run_ui_tc.py执行用例：
+* run_ui_tc.py执行用例：
 
 * 执行用例由config.Variable.py中TESTSUITE_WEB和TESTSUITE_APP指定
 * 执行命令
@@ -48,7 +48,7 @@ python.exe run_ui_tc.py
 python.exe run_ui_tc.py -t app
 ```
 
-run_ui_tc_db.py执行用例：
+* run_ui_tc_db.py执行用例：
 
 * 执行用例由命令参数指定
 * 执行命令
