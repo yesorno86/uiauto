@@ -13,12 +13,10 @@ browsermob-proxy 0.8.0
 
 ## 说明
 * 框架说明 <br/>
-keywords:Webdriver关键字驱动，用来控制webdriverclick, sendkey, refresh 等事件，如下：
-
-pages: 元素关键字，用于操作、定位元素配置，该页面继承BasePage,如下：
-
-cases: 用例编写 web目录为新框架用例，用例按照功能编写，用例编写格式如下：
-
-config.Variable: 项目配置，主要包含邮件等信息<br/>
-verfiy: 为断言验证，支持字符、数字、包含验证。
+keywords: 页面元素操作关键字定义文件
+pages: 页面元素定义文件
+cases: 测试用例文件
+config.Variable: 配置信息
+verfiy: 断言关键字定义
 utils: 常用工具类
+mysqlfiles: 数据库结构定义文件
