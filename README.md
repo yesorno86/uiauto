@@ -63,4 +63,4 @@ python.exe run_ui_tc.py -t app -s 91 -e 1 -m yes -r "reciever@163.com"
 
 ### 其他
 UI前端系统实现这里只放一张效果图：
-![Alt text](https://github.com/yuanmin86/uiauto/raw/master/screenshots/uiauto.png)
+![uiauto](https://github.com/yuanmin86/uiauto/raw/master/screenshots/uiauto.png)
