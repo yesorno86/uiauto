@@ -1,0 +1,79 @@
+{
+  "ts_name": "baidu_search",
+  "ts_description": "直播首页",
+  "ts_setup": [
+            {
+          "description": "打开百度首页",
+          "keyword": "open_page",
+          "params": [
+            "https://www.baidu.com/",
+            "百度一下，你就知道"
+          ]
+        }
+  ],
+  "testcases": [
+    {
+      "tc_name": "baidu_search",
+      "tc_description": "百度搜索测试",
+      "setup": [],
+      "steps": [
+        {
+          "description": "输入搜索关键字",
+          "keyword": "send_keys",
+          "params": [
+            "Pages.BaiduIndex.search_text",
+            "测试"
+          ]
+        },
+        {
+          "description": "点击搜索按钮",
+          "keyword": "click_element",
+          "params": [
+            "Pages.BaiduIndex.search_button"
+          ]
+        },
+        {
+          "description": "获取‘更多’链接text",
+          "keyword": "get_page_element_text",
+          "params": [
+            "Pages.BaiduResult.more_link.text"
+          ],
+          "result": "$Var_more_link_text",
+          "verify": "assertEqual",
+          "datatoverify": [
+            "$Var_more_link_text",
+            "更多»"
+          ]
+        },
+        {
+          "description": "获取‘更多’链接href",
+          "keyword": "get_page_element_attribute",
+          "params": [
+            "Pages.BaiduResult.more_link.get_attribute(\"href\")"
+          ],
+          "result": "$Var_more_link_href",
+          "verify": "assertEqual",
+          "datatoverify": [
+            "$Var_more_link_href",
+            "https://www.baidu.com/more/"
+          ]
+        },
+        {
+          "description": "验证’百度一下‘按钮",
+          "keyword": "check_element_exist",
+          "params": [
+            "Pages.BaiduResult.search_button"
+          ],
+          "result": "$Var_search_button_exist",
+          "verify": "assertEqual",
+          "datatoverify": [
+            "$Var_search_button_exist",
+            "true"
+          ]
+        }
+      ],
+      "teardown": []
+    }
+  ],
+  "ts_teardown":[]
+}

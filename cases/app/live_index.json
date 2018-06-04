@@ -1,0 +1,51 @@
+{
+  "ts_name": "app_index",
+  "ts_description": "app测试示例",
+  "ts_setup": [
+  ],
+  "testcases": [
+    {
+      "tc_name": "test_calulate",
+      "tc_description": "app测试示例",
+      "setup": [],
+      "steps": [
+        {
+          "description": "输入数字1",
+          "keyword": "click_element",
+          "params": [
+            "Pages.AppIndex.cal_one"
+          ]
+        },
+        {
+          "description": "输入数字2",
+          "keyword": "click_element",
+          "params": [
+            "Pages.AppIndex.cal_two"
+          ]
+        },
+        {
+          "description": "输入数字3",
+          "keyword": "click_element",
+          "params": [
+            "Pages.AppIndex.cal_three"
+          ]
+        },
+         {
+          "description": "输入数字4",
+          "keyword": "click_element",
+          "params": [
+            "Pages.AppIndex.cal_four"
+          ]
+        },
+        {
+          "description": "输入数字5",
+          "keyword": "click_element",
+          "params": [
+            "Pages.AppIndex.cal_five"
+          ]
+        }
+      ],
+      "teardown": []
+    }
+  ]
+}
